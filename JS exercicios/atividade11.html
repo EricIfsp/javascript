@@ -1,0 +1,29 @@
+<html>
+    <body style="text-align:center; background-color: blueviolet; font-size: 85px"
+    <head>
+       <title>questão onze</title>     
+    </head>
+    </body>
+<script lang="javascript">
+
+//exercicio 11
+//Uma escola com cursos em regime semestral, realiza duas avaliações durante o semestre e calcula a média do aluno, 
+//da seguinte maneira: MEDIA = (P1 +  2P2) / 3
+//Solicitar a digitação dos valores das notas (P1 e P2) e calcular a média.
+//Exibir a situação final do aluno (“Aprovado ou Reprovado”), sabendo que a média de aprovação é igual a seis;
+var p1, p2, media;
+ p1 = parseInt(window.prompt("digite o sua primeira nota:"));
+ p2 = parseInt(window.prompt("digite o sua segunda nota: "));
+
+media = (p1 + p2 + p2) / 3;
+if (media >= 6) 
+{
+  document.write("Voce foi aprovado!");
+}
+else 
+{
+  document.write("Voce foi reprovado");
+}
+
+</script>
+</html>

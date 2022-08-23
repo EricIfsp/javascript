@@ -1,0 +1,28 @@
+<html>
+    <body style="text-align:center; background-color: blueviolet; font-size: 55px"
+    <head>
+       <title>questao vinte</title>     
+    </head>
+    </body>
+<script lang="javascript">
+
+//exercicio 20
+//Exibir os trinta primeiros valores da série de Fibonacci. A série: 1, 1, 2, 3, 5, 8, ... 
+var Nanterior = 0; 
+var Natual = 1;
+var Fib;
+
+teclado = Number(window.prompt("Digite algo para escrever os 30 primeiros valores da serie de Fibonacci:"));
+document.write("1" + "<br>");
+
+for ( i = 0; i < teclado; i++)
+{
+  Fib = Nanterior;
+  Nanterior = Natual;
+  Natual = Fib + Nanterior;
+
+ document.write(Natual + "<br>");
+}
+
+</script>
+</html>

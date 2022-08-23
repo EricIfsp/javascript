@@ -1,0 +1,38 @@
+<html>
+    <body style="text-align:center; background-color: blueviolet; font-size: 85px"
+    <head>
+       <title>questão doze</title>     
+    </head>
+    </body>
+<script lang="javascript">
+
+//exercicio 12
+// Solicitar a digitação do peso e da altura de uma determinada pessoa. Após a digitação,
+//exibir se esta pessoa está ou não com seu peso ideal. Veja tabela da relação peso/altura².
+var al, pe, pideal, alfinal;
+ pe = parseInt(window.prompt("digite seu peso: "));
+ al = parseInt(window.prompt("digite sua altura: "));
+
+alfinal = al * al;
+pideal =  pe / alfinal;
+
+ if (pideal < 20)
+ {
+  document.write("você está abaixo do peso"); 
+ } 
+ else if (pideal >= 20 && pideal < 25)
+ {
+  document.write("você está no peso ideal");
+ } 
+ else if (pideal >= 25)
+ {
+  document.write("você está acima do peso");
+ }
+ else 
+ {
+  document.write("erro!");
+ }
+
+
+</script>
+</html>

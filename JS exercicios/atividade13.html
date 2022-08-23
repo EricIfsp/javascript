@@ -1,0 +1,44 @@
+<html>
+    <body style="text-align:center; background-color: blueviolet; font-size: 85px"
+    <head>
+       <title>questão treze</title>     
+    </head>
+    </body>
+<script lang="javascript">
+
+//exercicio 13
+// A partir de três valores que serão digitados, verificar se formam ou não um triângulo.
+//Em caso positivo, exibir sua classificação: “Isósceles, escaleno ou equilátero”.
+
+var la, lb, lc, c1, c2, c3;
+ la = parseInt(window.prompt("digite o valor do lado A: "));
+ lb = parseInt(window.prompt("digite o valor do lado B: "));
+ lc = parseInt(window.prompt("digite o valor do lado C: "));
+
+         c1 = la + lb;
+         c2 = la + lc;
+         c3 = lc + lb;
+
+         if (c1 < lc || c2 < lb || c3 < la)
+         {
+         document.write("Isso não é um triângulo)");
+         }
+
+         else
+         { 
+         if (la != lb && la != lc && lb != lc)
+         {
+         document.write("O triângulo é escaleno");
+         }
+         else if (la == lb && lb == lc)
+         {
+         document.write("O triângulo é equilátero");
+         }
+         else 
+         { 
+         document.write("O triângulo é isósceles");
+         }
+         } 
+
+</script>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <body style="text-align:center; background-color: blueviolet; font-size: 85px"
+    <head>
+       <title>questão catorze</title>     
+    </head>
+    </body>
+<script lang="javascript">
+
+//exercicio 14
+//Verificar se três valores quaisquer (A, B, C) que serão digitados formam ou não um triângulo retângulo. 
+//Lembre-se que o quadrado da hipotenusa é igual a soma dos quadrados dos catetos.
+var lado1, lado2, lado3, c4, c5, c6;
+lado1 = Number(window.prompt("Digite um valor para saber se formam um triângulo retângulo"));
+lado2 = Number(window.prompt("Digite um segundo valor para saber se formam um triângulo retângulo"));
+lado3 = Number(window.prompt("Digite o terceiro valor para saber se formam um triângulo retângulo"));
+
+    c4 = (lado2 * lado2) + (lado3 * lado3);
+    c5 = (lado1 * lado1) + (lado2 * lado2);
+    c6 = (lado1 * lado1) + (lado2 * lado2);
+
+      if (c4 == (lado1 * lado1) || (lado3 * lado3) == c5 || (lado2 * lado2) == c6)
+    {
+      document.write("Os valores digitados formam um triângulo retângulo ");
+    }
+      else
+    {
+      document.write("Os valores digitados não formam um triângulo retângulo ");
+    }
+          
+</script>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <body style="text-align:center; background-color: blueviolet; font-size: 55px"
+    <head>
+       <title>questão dezoito</title>     
+    </head>
+    </body>
+<script lang="javascript">
+
+//exercicio 18
+//Exibir a tabuada dos valores de um a vinte, no intervalo de um a dez. Gerar as tabuadas em tabelas individuais. 
+//As tabuadas deverão estar em 4 linhas com 4 colunas cada, totalizando as 20 tabuadas.
+function tabuada(...args) 
+        {
+          for (const number of args) 
+          {
+            construirTabuada(number);
+          }
+        }
+        
+        function construirTabuada(numero) 
+        {
+          let color_tr; 
+
+          document.write("<table border='1px' style='margin: 30px'>");
+
+          color_tr = "#ccc";
+          document.write("<tr style='background-color: " + color_tr + "'><td>Multiplicando</td><td>Resultado</td></tr>");
+
+          for (let i = 1; i <= 10; i++) 
+          {
+            document.write("<tr><td>" + i + "</td><td>" + i * numero + "</td></tr>");
+          }
+
+            document.write("</table>"); 
+          }
+
+
+tabuada(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
+
+</script>
+</html>
